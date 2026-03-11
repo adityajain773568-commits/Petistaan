@@ -1,0 +1,22 @@
+logging:
+  file:
+    name: ${logging.file.path}/${spring.application.name}.log
+    path: logs
+  logback:
+    rollingpolicy:
+      file-name-pattern: ${logging.file.path}/${spring.application.name}-%d{yyyy-MM-dd}-%i.log
+      max-file-size: 10MB
+spring:
+  application:
+    name: Petistaan
+  datasource:
+    password: ${MYSQL_PASSWORD}
+    url: jdbc:mysql://localhost:3306/petistaan
+    username: ${MYSQL_USERNAME}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  sql:
+    init:
+      mode: never
