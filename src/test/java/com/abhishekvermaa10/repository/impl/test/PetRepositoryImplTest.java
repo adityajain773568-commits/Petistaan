@@ -25,9 +25,7 @@ import com.abhishekvermaa10.entity.DomesticPet;
 import com.abhishekvermaa10.repository.PetRepository;
 import com.abhishekvermaa10.util.TestDataUtil;
 
-/**
- * @author abhishekvermaa10
- */
+
 @EntityScan(basePackages = "com.abhishekvermaa10.entity")
 @EnableJpaRepositories(basePackages = "com.abhishekvermaa10.repository")
 @ContextConfiguration(classes = { TestConfig.class })
