@@ -1490,3 +1490,80 @@ org.hibernate.query.sqm.PathElementException: Could not resolve attribute 'first
 2026-03-13T23:30:02.735+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/petistaan'
 2026-03-13T23:30:02.738+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : Started Demo in 1.491 seconds (process running for 7438.363)
 2026-03-13T23:30:02.740+05:30  INFO 23244 --- [Petistaan] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T23:32:00.209+05:30  INFO 23244 --- [Petistaan] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2026-03-13T23:32:00.628+05:30  INFO 23244 --- [Petistaan] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T23:32:00.782+05:30  INFO 23244 --- [Petistaan] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-13T23:32:00.884+05:30  INFO 23244 --- [Petistaan] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:32:00.952+05:30  INFO 23244 --- [Petistaan] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-13T23:32:00.994+05:30  INFO 23244 --- [Petistaan] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-03-13T23:32:02.371+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : Starting Demo using Java 21.0.9 with PID 23244 (F:\Petistaan\target\classes started by abc in F:\Petistaan)
+2026-03-13T23:32:02.372+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T23:32:03.005+05:30  INFO 23244 --- [Petistaan] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T23:32:03.059+05:30  INFO 23244 --- [Petistaan] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2026-03-13T23:32:03.629+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-13T23:32:03.631+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T23:32:03.631+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-13T23:32:03.678+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.a.c.c.C.[.[localhost].[/petistaan]     : Initializing Spring embedded WebApplicationContext
+2026-03-13T23:32:03.679+05:30  INFO 23244 --- [Petistaan] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1299 ms
+2026-03-13T23:32:03.860+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-13T23:32:03.865+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-13T23:32:03.888+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T23:32:03.889+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-13T23:32:04.029+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a96c9f4
+2026-03-13T23:32:04.030+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-13T23:32:04.033+05:30  INFO 23244 --- [Petistaan] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T23:32:04.249+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T23:32:04.361+05:30  INFO 23244 --- [Petistaan] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:32:04.667+05:30  WARN 23244 --- [Petistaan] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T23:32:05.100+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-13T23:32:05.120+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/petistaan'
+2026-03-13T23:32:05.128+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : Started Demo in 2.911 seconds (process running for 7560.752)
+2026-03-13T23:32:05.130+05:30  INFO 23244 --- [Petistaan] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T23:32:06.537+05:30  INFO 23244 --- [Petistaan] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 43 class path changes (1 addition, 0 deletions, 42 modifications)
+2026-03-13T23:32:06.538+05:30  INFO 23244 --- [Petistaan] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T23:32:06.556+05:30  INFO 23244 --- [Petistaan] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-13T23:32:06.559+05:30  INFO 23244 --- [Petistaan] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:32:06.559+05:30  INFO 23244 --- [Petistaan] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-13T23:32:06.564+05:30  INFO 23244 --- [Petistaan] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-03-13T23:32:06.749+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : Starting Demo using Java 21.0.9 with PID 23244 (F:\Petistaan\target\classes started by abc in F:\Petistaan)
+2026-03-13T23:32:06.751+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T23:32:06.963+05:30  INFO 23244 --- [Petistaan] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-13T23:32:06.979+05:30  INFO 23244 --- [Petistaan] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2026-03-13T23:32:07.129+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-13T23:32:07.130+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-13T23:32:07.130+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-13T23:32:07.173+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.a.c.c.C.[.[localhost].[/petistaan]     : Initializing Spring embedded WebApplicationContext
+2026-03-13T23:32:07.174+05:30  INFO 23244 --- [Petistaan] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2026-03-13T23:32:07.234+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-13T23:32:07.236+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-13T23:32:07.242+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-13T23:32:07.243+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-13T23:32:07.290+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@610ff2c0
+2026-03-13T23:32:07.291+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-13T23:32:07.293+05:30  INFO 23244 --- [Petistaan] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-13T23:32:07.384+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13T23:32:07.921+05:30  INFO 23244 --- [Petistaan] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:32:08.200+05:30  WARN 23244 --- [Petistaan] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-13T23:32:08.546+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-13T23:32:08.608+05:30  INFO 23244 --- [Petistaan] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/petistaan'
+2026-03-13T23:32:08.613+05:30  INFO 23244 --- [Petistaan] [restartedMain] com.abhishekvermaa10.Demo                : Started Demo in 1.914 seconds (process running for 7564.237)
+2026-03-13T23:32:08.614+05:30  INFO 23244 --- [Petistaan] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-13T23:33:17.408+05:30  INFO 23244 --- [Petistaan] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-13T23:33:17.446+05:30  INFO 23244 --- [Petistaan] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-13T23:33:17.461+05:30  INFO 23244 --- [Petistaan] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-13T23:33:17.475+05:30  INFO 23244 --- [Petistaan] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-13T23:33:17.505+05:30  INFO 23244 --- [Petistaan] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
