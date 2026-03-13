@@ -4,6 +4,9 @@ import com.abhishekvermaa10.enums.Gender;
 import com.abhishekvermaa10.enums.PetType;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -30,10 +33,18 @@ import lombok.ToString;
 public abstract class PetDTO {
 
     @EqualsAndHashCode.Include
-    private int id;
+    private Integer id;
+
+    @NotBlank(message = "{pet.name.required}")
+    @Size(max = 255, message = "{pet.name.length}")
     private String name;
+
+    @NotNull(message = "{pet.gender.required}")
     private Gender gender;
+
+    @NotNull(message = "{pet.type.required}")
     private PetType type;
+
     private OwnerDTO ownerDTO;
 
 }
