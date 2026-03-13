@@ -1,7 +1,11 @@
 package com.abhishekvermaa10.dto;
 
 import com.abhishekvermaa10.enums.Gender;
-
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -22,17 +26,32 @@ import lombok.ToString;
 @Getter
 public class OwnerDTO {
 
-	@EqualsAndHashCode.Include
-	private int id;
-	private String firstName;
-	private String lastName;
-	private Gender gender;
-	private String city;
-	private String state;
-	@EqualsAndHashCode.Include
-	private String mobileNumber;
-	@EqualsAndHashCode.Include
-	private String emailId;
-	private PetDTO petDTO;
+    @EqualsAndHashCode.Include
+    private int id;
+    @Size(max = 255, message = "{owner.first.name.length}")
+    @NotBlank(message = "{owner.first.name.required}")
+    private String firstName;
+    @Size(max = 255, message = "{owner.last.name.length}")
+    @NotBlank(message = "{owner.last.name.required}")
+    private String lastName;
+    @NotNull(message = "{owner.gender.required}")
+    private Gender gender;
+    @Size(max = 255, message = "{owner.city.length}")
+    @NotBlank(message = "{owner.city.required}")
+    private String city;
+    @Size(max = 255, message = "{owner.state.length}")
+    @NotBlank(message = "{owner.state.required}")
+    private String state;
+    @EqualsAndHashCode.Include
+    @Size(max = 10, min = 10, message = "{owner.mobile.number.required}")
+    @NotBlank(message = "{owner.mobile.number.length}")
+    private String mobileNumber;
+    @EqualsAndHashCode.Include
+    @Email(message = "{owner.email.invalid}")
+    @NotBlank(message = "{owner.email.length}")
+    private String emailId;
+    @Valid
+    @NotNull(message = "{owner.pet.required}")
+    private PetDTO petDTO;
 
 }
