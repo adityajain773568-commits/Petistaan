@@ -1,5 +1,6 @@
 package com.abhishekvermaa10.service;
 
+import com.abhishekvermaa10.dto.AverageAgeDTO;
 import com.abhishekvermaa10.dto.PetDTO;
 import com.abhishekvermaa10.exception.PetNotFoundException;
 
@@ -7,9 +8,9 @@ import com.abhishekvermaa10.exception.PetNotFoundException;
  * @author abhishekvermaa10
  */
 public interface PetService {
-	
-	PetDTO findPet(int petId) throws PetNotFoundException;
-	
-	Double findAverageAgeOfPet();
-	
+
+    PetDTO findPet(int petId) throws PetNotFoundException;
+
+    AverageAgeDTO findAverageAgeOfPet();
+
 }
